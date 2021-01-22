@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Cover": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
