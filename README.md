@@ -1,12 +1,11 @@
 # dotnet-coverage
 
-Code coverage for .net using dockerfile with sonar scanner
+The goal of this project is to demonstrate how to use sonar scanner in a Linux(ONLY) container to generate code coverage for .NET core projects.
 
 ### Prerequisites
-* Docker Desktop for Windows
-* .NET Core 3.1 SDK
-
-### Usage
+* [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.405-windows-x64-installer)
+* Background knowledge of [SonarQube](https://www.sonarqube.org/)
 
 #### Setup SonarQube
 1. Run SonarQube server
@@ -45,11 +44,17 @@ git clone https://github.com/AshleyDhevalall/dotnet-coverage.git
 
 ## Troubleshooting
 
-* WHAT CONTAINER PLATFORMS DOES THIS WORK ON?
+* WHAT CONTAINER PLATFORMS DOES THIS WORK ON? 
+Linux Only
+
 * WHAT NEEDS TO BE ADDED TO THE CSPROJ FILES?
+
 * WHAT PARAMS DO YOU PASS TO SONAR SCANNER?
+
 * HOW DO YOU SETUP SONARQUBE SERVER USING DOCKER
+
 * HOW TO CHECK CODE COVERAGE IN SONARQUBE SERVER
+
 
 #### TODO
 
