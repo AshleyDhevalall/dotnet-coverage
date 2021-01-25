@@ -8,11 +8,39 @@ Code coverage for .net using dockerfile with sonar scanner
 
 ### Usage
 
+#### Setup SonarQube
+1. Run SonarQube server
+
+```
+docker run -d --name sonarqube -p 9000:9000 sonarqube:7.5-community
+ ```
+
+2. Run docker ps and check if a server is up and running
+
+```
+docker image
+```
+
+3. Wait for the server to start and log in to SonarQube server on http://localhost:9000 using default credentials: login: admin password: admin
+
+4. Clone the repository
+
+5. Navigate to cloned repository folder
+
+6. Run the command below to build the docker image
+```
+docker build --network=host --no-cache .
+```
+
+7. Go to SonarQube server
+
+8. The project will displayed on the home page with the code coverage percentage.
+
 ## Getting the Source
 
 This project is hosted on [GitHub](https://github.com/AshleyDhevalall/dotnet-coverage). You can clone this project directly using this command:
 ```
-git clone https://github.com/AshleyDhevalall/TestRail.NUnit.Integration.git
+git clone https://github.com/AshleyDhevalall/dotnet-coverage.git
 ```
 
 ## Troubleshooting
