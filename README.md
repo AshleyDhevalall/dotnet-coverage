@@ -47,7 +47,7 @@ docker build --network=host --no-cache .
 
 ## Troubleshooting
 #### No code coverage being published?
-* Install coverlet.msbuild package in all unit test projects.
+* Install [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) package in all unit test projects.
   
 ```
 <PackageReference Include="coverlet.msbuild" Version="2.6.1">
