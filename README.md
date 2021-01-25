@@ -9,21 +9,21 @@ The goal of this project is to demonstrate how to use Sonar Scanner in a dockerf
 * [Sonar Scanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
 
 #### Setup SonarQube
-1. Run Docker Desktop for Windows (Ensure running as Linux Containers)
+* Run Docker Desktop for Windows (Ensure running as Linux Containers)
 
-2. Run SonarQube server
+* Run SonarQube server
 
 ```
 docker run -d --name sonarqube -p 9000:9000 sonarqube:7.5-community
  ```
 
-3. Run docker ps and check if a server is up and running
+* Run docker ps and check if a server is up and running
 
 ```
 docker image
 ```
 
-4. Wait for the server to start and log in to SonarQube server on http://localhost:9000 using default credentials: login: admin password: admin
+* Wait for the server to start and log in to SonarQube server on http://localhost:9000 using default credentials: login: admin password: admin
 
 #### Clone repository
 
@@ -31,18 +31,17 @@ docker image
 git clone https://github.com/AshleyDhevalall/dotnet-coverage.git
 ```
 
-1. Navigate to cloned repository folder
+* Navigate to cloned repository folder
 
 #### Building the docker image
-1. Run the command below in the cloned repository folder to build the docker image
+* Run the command below in the cloned repository folder to build the docker image
 ```
 docker build --network=host --no-cache .
 ```
 
 #### View the code coverage results
-1. Go to SonarQube server on http://localhost:9000
-
-2. The project will displayed on the home page with the code coverage percentage.
+* Go to SonarQube server on http://localhost:9000
+* The project will displayed on the home page with the code coverage percentage.
 
 ## Troubleshooting
 
