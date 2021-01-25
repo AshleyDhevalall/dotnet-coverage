@@ -8,6 +8,8 @@ The goal of this project is to demonstrate how to use Sonar Scanner in a dockerf
 * [SonarQube](https://www.sonarqube.org/)
 * [Sonar Scanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
 
+### Usage
+
 #### Setup SonarQube
 * Run Docker Desktop for Windows (Ensure running as Linux Containers)
 
