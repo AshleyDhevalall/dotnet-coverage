@@ -46,17 +46,15 @@ docker build --network=host --no-cache .
 * The project will displayed on the home page with the code coverage percentage.
 
 ## Troubleshooting
-
-* WHAT CONTAINER PLATFORMS DOES THIS WORK ON? 
-Linux Only
-
-* WHAT NEEDS TO BE ADDED TO THE CSPROJ FILES?
-
-* WHAT PARAMS DO YOU PASS TO SONAR SCANNER?
-
-* HOW DO YOU SETUP SONARQUBE SERVER USING DOCKER
-
-* HOW TO CHECK CODE COVERAGE IN SONARQUBE SERVER
+* No code coverage being published?
+  Install coverlet.msbuild package in all unit test projects.
+  
+```
+<PackageReference Include="coverlet.msbuild" Version="2.6.1">
+  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  <PrivateAssets>all</PrivateAssets>
+</PackageReference>
+```
 
 ## License
 
