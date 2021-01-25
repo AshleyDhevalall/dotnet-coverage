@@ -19,7 +19,7 @@ The goal of this project is to demonstrate how to use Sonar Scanner in a dockerf
 docker run -d --name sonarqube -p 9000:9000 sonarqube:7.5-community
  ```
 
-* Run docker ps and check if a server is up and running
+* Run docker ps and check if the server is up and running
 
 ```
 docker image
@@ -46,8 +46,8 @@ docker build --network=host --no-cache .
 * The project will displayed on the home page with the code coverage percentage.
 
 ## Troubleshooting
-* No code coverage being published?
-  Install coverlet.msbuild package in all unit test projects.
+#### No code coverage being published?
+* Install coverlet.msbuild package in all unit test projects.
   
 ```
 <PackageReference Include="coverlet.msbuild" Version="2.6.1">
