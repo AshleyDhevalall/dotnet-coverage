@@ -29,14 +29,16 @@ docker image
 
 5. Navigate to cloned repository folder
 
-6. Run the command below to build the docker image
+#### Build the docker image
+1. Run the command below to build the docker image
 ```
 docker build --network=host --no-cache .
 ```
 
-7. Go to SonarQube server on http://localhost:9000
+#### View the code coverage results
+1. Go to SonarQube server on http://localhost:9000
 
-8. The project will displayed on the home page with the code coverage percentage.
+2. The project will displayed on the home page with the code coverage percentage.
 
 ## Getting the Source
 
