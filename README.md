@@ -58,13 +58,6 @@ Linux Only
 
 * HOW TO CHECK CODE COVERAGE IN SONARQUBE SERVER
 
-
-#### TODO
-
-## Authors
-
-[Ashley Dhevalall](https://github.com/AshleyDhevalall)
-
 ## License
 
 MIT License
