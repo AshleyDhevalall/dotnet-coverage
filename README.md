@@ -17,23 +17,24 @@ The goal of this project is to demonstrate how to use Sonar Scanner in a dockerf
 docker run -d --name sonarqube -p 9000:9000 sonarqube:7.5-community
  ```
 
-2. Run docker ps and check if a server is up and running
+3. Run docker ps and check if a server is up and running
 
 ```
 docker image
 ```
 
-3. Wait for the server to start and log in to SonarQube server on http://localhost:9000 using default credentials: login: admin password: admin
+4. Wait for the server to start and log in to SonarQube server on http://localhost:9000 using default credentials: login: admin password: admin
 
-4. Clone the repository
+#### Clone repository
+
 ```
 git clone https://github.com/AshleyDhevalall/dotnet-coverage.git
 ```
 
-5. Navigate to cloned repository folder
+1. Navigate to cloned repository folder
 
-#### Build the docker image
-1. Run the command below to build the docker image
+#### Building the docker image
+1. Run the command below in the cloned repository folder to build the docker image
 ```
 docker build --network=host --no-cache .
 ```
