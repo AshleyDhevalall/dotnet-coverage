@@ -23,6 +23,15 @@ env:
 
 
 jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: pull-request
+    uses: diillson/auto-pull-request@latest
+      with:
+        destination_branch: "master"
+
   build:
 
     runs-on: ubuntu-latest
